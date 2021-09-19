@@ -1,0 +1,54 @@
+header {
+  width:100%;
+  height:120px;
+  background-color: #fbc;
+  
+}
+header img {
+  padding: 10px 20px;
+  float: left;
+}
+header h1 {
+  padding: 10px 0px;
+}
+nav {
+  width: 500px;
+  height: 90px;
+  margin: 10px auto;
+  background-color: #fbc;
+}
+nav a.wrd1{
+  padding: 20px 0 0 30px;
+}
+nav a.wrd2{
+  padding: 20px 0 0 30px;
+}
+nav a.wrd3{
+  padding: 20px 0 0 30px;
+}
+div.table {
+  width: 250px;
+  height: 150px;
+  margin: 10px auto;
+  background-color: #fbc;
+}
+div.hypertext {
+  width: 270px;
+  height: 400px;
+  margin: 10px auto;
+  background-color: #fbc;
+}
+div.forms {
+  width: 400px;
+  height: 700px;
+  margin: 10px auto;
+  background-color: #fbc;
+  padding: 0px 10px
+}
+footer {
+  width: 500px;
+  height: 30px;
+  margin: 10px auto;
+  background-color: #fbc;
+  padding: 10px 0 0 50px;
+}
