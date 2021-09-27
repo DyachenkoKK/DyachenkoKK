@@ -4,51 +4,87 @@ header {
   background-color: #fbc;
   
 }
+#main-block {
+  flex-direction: column;
+  display:flex;
+}
 header img {
-  padding: 10px 20px;
+  padding: 10px 25px;
   float: left;
 }
 header h1 {
   padding: 10px 0px;
 }
 nav {
-  width: 500px;
-  height: 90px;
-  margin: 10px auto;
+  margin: 10px 0 5px;
   background-color: #fbc;
 }
-nav a.wrd1{
-  padding: 20px 0 0 30px;
+#navigation {
+  display:flex;
+  flex-direction: column;
 }
-nav a.wrd2{
-  padding: 20px 0 0 30px;
+nav {
+  padding: 10px 25px;
 }
-nav a.wrd3{
-  padding: 20px 0 0 30px;
-}
-div.table {
-  width: 250px;
-  height: 150px;
-  margin: 10px auto;
-  background-color: #fbc;
-}
+
 div.hypertext {
-  width: 270px;
-  height: 400px;
-  margin: 10px auto;
+  margin: 5px 0;
+  background-color: #fbc;
+}
+
+div.table {
+  padding: 10px 25px;
+  margin: 5px 0;
   background-color: #fbc;
 }
 div.forms {
-  width: 400px;
-  height: 700px;
-  margin: 10px auto;
+  margin: 5px 0;
   background-color: #fbc;
-  padding: 0px 10px
+  padding: 10px 25px
+}
+#list-block {
+  padding: 0 0 0 5px;
 }
 footer {
-  width: 500px;
-  height: 30px;
-  margin: 10px auto;
+  margin: 5px 0 0;
   background-color: #fbc;
-  padding: 10px 0 0 50px;
+  padding: 10px 0 10px 25px;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    width: 500px;
+    height: 90px;
+    margin: 10px auto;
+  }
+  nav a.wrd1{
+    padding: 20px 0 0 30px;
+  }
+  nav a.wrd2{
+    padding: 20px 0 0 30px;
+  }
+  nav a.wrd3{
+    padding: 20px 0 0 30px;
+  }
+  div.hypertext {
+    width: 270px;
+    height: 400px;
+    margin: 10px auto;
+  }
+  div.table {
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+  }
+  div.forms {
+    width: 400px;
+    height: 700px;
+    margin: 10px auto;
+    padding: 0px 10px
+  }
+  footer {
+    width: 500px;
+    height: 30px;
+    margin: 10px auto;
+    padding: 10px 0 0 50px;
+  }
 }
