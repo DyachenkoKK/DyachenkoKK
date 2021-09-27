@@ -1,10 +1,10 @@
-header {
+main header {
   width:100%;
   height:120px;
   background-color: #fbc;
-  
+  order:1;
 }
-#main-block {
+#all-block {
   flex-direction: column;
   display:flex;
 }
@@ -18,44 +18,50 @@ header h1 {
 nav {
   margin: 10px 0 5px;
   background-color: #fbc;
-}
-#navigation {
   display:flex;
   flex-direction: column;
-}
-nav {
   padding: 10px 25px;
+  order: 2;
 }
 
 div.hypertext {
   margin: 5px 0;
   background-color: #fbc;
+  order: 3;
+}
+
+#list-block {
+  padding: 0 0 0 5px;
 }
 
 div.table {
   padding: 10px 25px;
   margin: 5px 0;
   background-color: #fbc;
+  order: 4;
 }
+
 div.forms {
   margin: 5px 0;
   background-color: #fbc;
   padding: 10px 25px
+  order: 5;
 }
-#list-block {
-  padding: 0 0 0 5px;
-}
+
 footer {
   margin: 5px 0 0;
   background-color: #fbc;
   padding: 10px 0 10px 25px;
+  order: 6;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (min-width: 480px) {
   nav {
     width: 500px;
     height: 90px;
     margin: 10px auto;
   }
+
   nav a.wrd1{
     padding: 20px 0 0 30px;
   }
@@ -65,22 +71,28 @@ footer {
   nav a.wrd3{
     padding: 20px 0 0 30px;
   }
+
   div.hypertext {
     width: 270px;
     height: 400px;
     margin: 10px auto;
   }
+
   div.table {
     width: auto;
     height: auto;
     margin: 10px auto;
+    order: 5;
   }
+
   div.forms {
     width: 400px;
     height: 700px;
     margin: 10px auto;
     padding: 0px 10px
+    ordeer: 4;
   }
+
   footer {
     width: 500px;
     height: 30px;
