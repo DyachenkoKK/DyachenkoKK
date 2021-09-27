@@ -50,7 +50,7 @@ footer {
   background-color: #fbc;
   padding: 10px 0 10px 25px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1100px) {
   nav {
     width: 500px;
     height: 90px;
