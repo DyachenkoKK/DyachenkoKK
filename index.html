@@ -6,67 +6,52 @@
     </head>
 
     <body>
+    <div id="main-block">
      <header>
        <img src="image2.png" alt="Some text" />
        <h1>Сайт-визитка</h1>
      </header>
 
-     <nav>
+     <nav id="navigation">
        <a href="#hypertext" class="wrd1">Первая часть кода</a>
        <a href="#table" class="wrd2">Таблица</a>
        <a href="#forms" class="wrd3">Вторая часть кода</a>
      </nav>
 
-     <div class="hypertext" id="hypertext">
+     <div class="hypertext">
        <ol>
          <li><a href="http://example.com">Example #1</a></li>
-
          <li><a href="https://example.com">Example #2</a></li>
-
          <li><a href="ftp://example.com">Example #3</a></li>
-
          <li><a href="ftp://user:password@example.com/example.zip">Example #4</a></li>
-
          <li><a href="http://example.com/#page">Example #5</a></li>
-
          <li><a href="#example link">Example #6</a></li>
-
          <li><a href="http://example.com/page?example1=1&example2=1">Example #7</a></li>
-
          <li><br /></li>
-
          <li>Example #9: http://example.com </li>
 
+         <div id="list-block">
          <li><a href="">Example #10</a></li>
-
          <li><a href="http://example.com" rel="nofollow">Example #11</a></li>
-
          <li><a href="http://example.com"><noindex>Exmple #12</noindex></a></li>
-
          <li>I like your <a href="http://example.com">Example #13</a></li>
-
          <li>Example #14: <img src="image.jpg" alt="Example #14" style="width:50px;"></li>
-
          <li><map><area href="http://example.com" alt="Example #15"></map></li>
-
          <li><a href="/example.html">Example #16</li>
-
          <li><a href="/about">Example #17</li>
-
          <li><a href="../page">Example #18</li>
-
          <li><a href="../../page">Example #19</li>
-
          <li><a href="/">Example #20</a></li>
-
          <li><br /></li>
+         </div>
+
        </ol>
      </div>
 
      <div class="table" id="table">
        <table>
          <tr>
-           <th>Колонка 1</th>
+           <th dir="rtl">Колонка 1</th>
            <th>Колонка 2</th>
            <th>Колонка 3</th>
          </tr>
@@ -191,5 +176,6 @@
      <footer>
       (с)Кирилл Дьяченко 2021
      </footer>
+    </div>
     </body>
   </html>
