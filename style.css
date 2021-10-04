@@ -34,7 +34,7 @@ footer {
   order: 6;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
   nav {
     width: 75%;
     height: 100px;
