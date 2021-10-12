@@ -15,8 +15,8 @@
           <div class="col">
             <main>
               <header>
-                <div class="col-sm-3 order-1 px-2"><img src="image2.png" alt="Some text" /></div>
-                <div class="col-md-9 order-2 px-3"><h1>Сайт-визитка</h1></div>
+                <div class="col-sm-3 order-1 px-2 pt-3"><img src="image2.png" alt="Some text" /></div>
+                <div class="col-md-9 order-2 px-3 pt-3"><h1>Сайт-визитка</h1></div>
               </header>
             </main>
           </div>
@@ -106,7 +106,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col mb-3 ">
+          <div class="col mb-3">
             <div class="forms pl-3 py-2" id="forms">
               <form action="/" method="POST">
                 <label>
@@ -187,11 +187,25 @@
                 </label>
                 <br />
                 <br />
-                  <input type="submit" value="Отправить" />
+                <input type="submit" value="Отправить" />
               </form>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col mb-3">
+            <div class="calculator pl-3 py-2">
+              <form>
+                <input name="price" value="Введите цену товара" type="text" />
+                <input name="number" value="Введите количество товара" type="text" />
+                <div id="result"></div>
+                <button id="submit_button" onclick="return clicked();">Подсчитать стоимость</button>
+              </form>
+            </div>
+          </div>
+        </div>  
       </div>
       <div class="container-fluid">
         <div>
@@ -204,5 +218,14 @@
           </div>
         </div>
       </div>
+      <script>
+        function clicked() {
+          let p = document.getElementsByName("price");
+          let n = document.getElementsByName("number");
+          let rez = document.getElementById("result");
+          rez.innerHTML = "Стоимость заказа: "+ (p[0].value * n[0].value);
+          return false;
+        }
+      </script>  
     </body>
   </html>
