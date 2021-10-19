@@ -202,6 +202,23 @@
                 <input name="number" value="Введите количество товара" type="text" />
                 <div id="result"></div>
                 <button id="submit_button" onclick="return clicked();">Подсчитать стоимость</button>
+                <select name="selection">
+                  <option value="frst">Первый тип товара</option>
+                  <option value="scnd">Второй тип товара</option>
+                  <option value="thrd">Третий тип товара</option>
+                </select>
+                <br />
+                <div id="prices">
+                  <label><input type="radio" name="radio_button" value="r1" checked="checked">Увеличить цену вдвое</label>
+                  <label><input type="radio" name="radio_button" value="r2">Увеличить цену втрое</label>
+                </div>
+                <div id="chek">
+                  <label>
+                    <input type="checkbox" name="your_agreement" />
+                    Получить чек
+                  </label>
+                </div>
+                <div id="chek_result"></div>
               </form>
             </div>
           </div>
@@ -218,14 +235,6 @@
           </div>
         </div>
       </div>
-      <script>
-        function clicked() {
-          let p = document.getElementsByName("price");
-          let n = document.getElementsByName("number");
-          let rez = document.getElementById("result");
-          rez.innerHTML = "Стоимость заказа: "+ (p[0].value * n[0].value);
-          return false;
-        }
-      </script>  
+      <script src="script.js"></script>  
     </body>
   </html>
